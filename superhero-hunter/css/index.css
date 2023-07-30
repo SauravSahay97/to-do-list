@@ -1,0 +1,131 @@
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body{
+  background-image: url("../images/marvel.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.search-section,
+.fav-section,
+.about-sec {
+  background:rgba(232, 55, 55, 0.5);
+}
+.search-container {
+  width: 500px !important;
+  padding: 50px;
+}
+
+.result-section {
+  background-color: rgba(232, 55, 55, 0.5);
+}
+.result-section h2 {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#superhero{
+  color:rgb(95, 44, 26);
+  text-shadow: #a6445d;
+}
+
+.nav-text{
+  top:50px;
+  align-items: center;
+  color: #fff;
+  font-family:cambria;
+  font-family: cursive;
+  font-size: 1.5rem;
+}
+
+#info1{
+  width: 50vw;
+  margin-left: 10%;
+  font: tahoma;
+  font-weight: bold;
+  font-size: 1.13rem;
+  word-spacing: 3px;
+  color: rgb(236, 227, 160);
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #125b08;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+/*  Alert type box displaying in the bottom of the screen */
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/*  Less width screen Responsiveness  */
+@media only screen and (max-width: 768px) {
+  .search-container {
+    width: 100% !important;
+    padding: 50px;
+  }
+
+  div#superhero {
+    width: 100%;
+  }
+}
